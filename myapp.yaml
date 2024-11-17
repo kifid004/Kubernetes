@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-deployment
+  name: myapp-deployment
   labels:
-    app: nodeapp
+    app: myapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodeapp
+      app: myapp
   template:
     metadata:
       labels:
-        app: nodeapp
+        app: myapp
     spec:
       containers:
-      - name: nodeserver
-        image: kifid004/myapp:latest
+      - name: myapp
+        image: kifid004/myapp:1.5
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
