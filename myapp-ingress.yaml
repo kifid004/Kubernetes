@@ -9,8 +9,8 @@ spec:
     - host: myapp.com
       http:
         paths:
-          - path:
-            pathType:
+          - path: /posts
+            pathType: Prefix
             backend:
               service:
                 Name: myapp-service
