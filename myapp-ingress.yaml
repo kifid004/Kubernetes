@@ -12,7 +12,8 @@ spec:
           - path:
             pathType:
             backend:
-          serviceName: myapp-service
-          port:
-            number: 3000
+              service:
+                Name: myapp-service
+                port:
+                  number: 3000
 
