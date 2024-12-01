@@ -9,7 +9,9 @@ spec:
     - host: myapp.com
       http:
         paths:
-      - backend:
+          - path:
+            pathType:
+            backend:
           serviceName: myapp-service
           port:
             number: 3000
