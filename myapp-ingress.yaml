@@ -8,7 +8,7 @@ spec:
   rules:
   - host: myapp.com
     http:
-      path:
+      paths:
       - backend:
           serviceName: myapp-service
           port:
