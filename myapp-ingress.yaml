@@ -6,9 +6,9 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: myapp.com
-    http:
-      paths:
+    - host: myapp.com
+      http:
+        paths:
       - backend:
           serviceName: myapp-service
           port:
