@@ -13,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                Name: myapp-service
+                name: myapp-service
                 port:
                   number: 3000
