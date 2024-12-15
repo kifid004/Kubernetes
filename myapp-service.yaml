@@ -4,7 +4,7 @@ metadata:
   name: myapp-service
 spec:
   selector:
-    app.kubernetes.io/name: myapp
+    app: myapp
   ports:
     - protocol: TCP
       port: 3000
